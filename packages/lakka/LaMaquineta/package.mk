@@ -36,8 +36,9 @@ PKG_AUTORECONF="no"
 
 #PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET gpicase-safeshutdown"
 
-#post_install() {
+post_install() {
 #  if [ "$PROJECT" == "RPi" ] && [ "$BOARD" == "GPICase" ]; then
 #    enable_service disable-hdmi.service
 #  fi
-#}
+   enable_service serial-console.service
+}

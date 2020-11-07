@@ -21,3 +21,8 @@ disable_splash=1
 disable_overscan=1
 dtparam=audio=on
 hdmi_drive=2
+
+dtoverlay=disable-bt
+earlycon=uart8250,mmio32,0x20215040
+earlycon=pl011,mmio32,0x20201000
+enable_uart=1
