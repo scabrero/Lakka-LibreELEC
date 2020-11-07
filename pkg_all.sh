@@ -46,6 +46,7 @@ targets="\
 	WeTek_Play|arm||| \
 	WeTek_Play_2|arm||| \
 	Gamegirl|arm||| \
+	LaMaquineta|arm||| \
 	S8X2|arm||S82| \
 	S805|arm||MXQ| \
 	S905|arm||| \

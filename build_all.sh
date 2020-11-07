@@ -77,6 +77,8 @@ PROJECT=Rockchip DEVICE=MiQi ARCH=arm make image
 PROJECT=Rockchip DEVICE=RK3399 BOARD=ROCKPro64 ARCH=arm make image
 PROJECT=Rockchip DEVICE=RK3399 BOARD=ROCK960 ARCH=arm make image
 # PROJECT=Rockchip DEVICE=RK3399 BOARD=OdroidN1 ARCH=arm make image
+>&2 echo "LaMaquineta.arm"
+PROJECT=LaMaquineta ARCH=arm make image
 
 rm target/*.kernel
 rm target/*.system

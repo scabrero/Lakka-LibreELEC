@@ -224,6 +224,11 @@ makeinstall_target() {
     sed -i -e "s/video_font_path =\/usr\/share\/retroarch-assets\/xmb\/monochrome\/font.ttf//" $INSTALL/etc/retroarch.cfg
   fi
 
+  # LaMaquineta
+  if [ "$PROJECT" == "LaMaquineta" ]; then
+    echo "audio_device = \"sysdefault:CARD=ALSA\"" >> $INSTALL/etc/retroarch.cfg
+  fi
+
   # GPICase
   if [ "$PROJECT" == "RPi" ] && [ "$BOARD" == "GPICase" ]; then
     echo "audio_device = \"default:CARD=ALSA\"" >> $INSTALL/etc/retroarch.cfg

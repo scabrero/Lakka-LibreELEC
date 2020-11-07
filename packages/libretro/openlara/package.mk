@@ -41,7 +41,7 @@ make_target() {
   fi
 
   case $PROJECT in
-    RPi|RPi2|Gamegirl|Slice|Slice3)
+    RPi|RPi2|Gamegirl|Slice|Slice3|LaMaquineta)
       CFLAGS+=" -I$SYSROOT_PREFIX/usr/include/interface/vcos/pthreads \
                 -I$SYSROOT_PREFIX/usr/include/interface/vmcs_host/linux"
       CXXFLAGS+=" -I$SYSROOT_PREFIX/usr/include/interface/vcos/pthreads \

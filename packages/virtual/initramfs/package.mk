@@ -44,6 +44,11 @@ if [ "$PROJECT" = "Gamegirl" ]; then
   PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET gamegirl-screen:init"
 fi
 
+# TODO
+#if [ "$PROJECT" = "LaMaquineta" ]; then
+#  PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET lamaquineta-screen:init"
+#fi
+
 post_install() {
   ( cd $BUILD/initramfs
     if [ "$TARGET_ARCH" = "x86_64" -o "$TARGET_ARCH" = "powerpc64" ]; then

@@ -36,7 +36,7 @@ if [ "$KODIPLAYER_DRIVER" == "bcm2835-driver" ]; then
 fi
 
 # ARMv6 is no longer supported by libvpx
-if [ "$PROJECT" != "RPi" -a "$PROJECT" != "Slice" ]; then
+if [ "$PROJECT" != "RPi" -a "$PROJECT" != "Slice" -a "$PROJECT" != "LaMaquineta" ]; then
   PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET libvpx"
 fi
 

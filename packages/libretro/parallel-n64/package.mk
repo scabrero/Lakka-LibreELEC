@@ -49,7 +49,7 @@ make_target() {
     LDFLAGS="$LDFLAGS -lpthread"
     CFLAGS="$CFLAGS -DARM_FIX"
     make platform=armv-neon WITH_DYNAREC=arm HAVE_PARALLEL=1 HAVE_NEON=1
-  elif [ "$PROJECT" == "RPi" -o "$PROJECT" == "Gamegirl" -o "$PROJECT" == "Slice" ]; then
+  elif [ "$PROJECT" == "RPi" -o "$PROJECT" == "Gamegirl" -o "$PROJECT" == "Slice" -o "$PROJECT" = "LaMaquineta" ]; then
     CFLAGS="$CFLAGS -DARM_FIX"
     make platform=rpi
   elif [[ "$PROJECT" == "Generic_VK_nvidia" ]]; then

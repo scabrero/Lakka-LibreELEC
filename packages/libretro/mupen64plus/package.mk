@@ -40,7 +40,7 @@ pre_configure_target() {
 
 make_target() {
   case $PROJECT in
-    RPi|Gamegirl|Slice)
+    RPi|Gamegirl|Slice|LaMaquineta)
       CFLAGS="$CFLAGS -I$SYSROOT_PREFIX/usr/include/interface/vcos/pthreads \
 	              -I$SYSROOT_PREFIX/usr/include/interface/vmcs_host/linux"
       make platform=rpi GLES=1 FORCE_GLES=1 WITH_DYNAREC=arm
