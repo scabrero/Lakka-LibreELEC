@@ -154,7 +154,7 @@
   # disable some cores which are unuseful for RPi
     LIBRETRO_CORES="${LIBRETRO_CORES// 4do /}"
     LIBRETRO_CORES="${LIBRETRO_CORES// beetle-bsnes /}"
-    LIBRETRO_CORES="${LIBRETRO_CORES// beetle-psx /}"
+    #LIBRETRO_CORES="${LIBRETRO_CORES// beetle-psx /}"
     LIBRETRO_CORES="${LIBRETRO_CORES// beetle-saturn /}"
     LIBRETRO_CORES="${LIBRETRO_CORES// beetle-vb /}"
     LIBRETRO_CORES="${LIBRETRO_CORES// bsnes2014 /}"
@@ -180,7 +180,7 @@
     LIBRETRO_CORES="${LIBRETRO_CORES// mesen-s /}"
     LIBRETRO_CORES="${LIBRETRO_CORES// mesen /}"
     LIBRETRO_CORES="${LIBRETRO_CORES// mupen64plus_next /}"
-    LIBRETRO_CORES="${LIBRETRO_CORES// mupen64plus /}"
+    #LIBRETRO_CORES="${LIBRETRO_CORES// mupen64plus /}"
     LIBRETRO_CORES="${LIBRETRO_CORES// openlara /}"
     LIBRETRO_CORES="${LIBRETRO_CORES// play /}"
     LIBRETRO_CORES="${LIBRETRO_CORES// parallel-n64 /}"
